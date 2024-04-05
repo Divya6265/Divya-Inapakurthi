@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            user-select: none;
+        }
+        #checkbox{
+            display: none;
+        }
+       
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px;
+
+        }
+       @media screen and (max-width: 800px) {
+        .open{
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ .open{
+            display: block;
+        }
+       }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="checkbox"  id="checkbox">
+    <label for="checkbox" class="hamburger">&#9776;</label>
+    <div class="open">
+        ljadsf
+    </div>
+    <div class="close">
+        sjgdv
+    </div>
+</body>
+</html>
